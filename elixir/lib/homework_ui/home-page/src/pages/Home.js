@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 
 class Home extends Component {
 
-
+    //attempt at a file importer.. kept getting stonewalled when trying to use
+    //'getelementbyid().onclick/onchange because the html hadn't loaded yet
 
     // fileSelectHandler = event => {
     //     this.setState({
