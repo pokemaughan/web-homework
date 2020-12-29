@@ -6,5 +6,11 @@
   "repository": "https://github.com/DivvyPayHQ/web-homework",
   "author": "Lance Wintch <lance.wintch@divvypay.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@angular/cli": "^11.0.5",
+    "@angular/core": "^11.0.5",
+    "typescript": "^4.1.3",
+    "yarn": "^1.22.10"
+  }
 }

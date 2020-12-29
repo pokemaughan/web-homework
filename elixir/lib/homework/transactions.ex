@@ -101,4 +101,16 @@ defmodule Homework.Transactions do
   def change_transaction(%Transaction{} = transaction, attrs \\ %{}) do
     Transaction.changeset(transaction, attrs)
   end
+
+  @doc """
+  Returns list of transactions between min and max?
+   - for each transaction, where amount is greater than min and less than max
+      select the transaction
+
+  """
+  def search_transactions(%Transaction{} = min, max) do
+    Repo.all(Transaction)
+    |> where([t], ^min < t.amount and t.amount < ^max)
+    |> select([t], [t]) #is this how to say pull the whole transaction?
+  end
 end
